@@ -7,7 +7,7 @@ namespace Task4
         static void Main(string[] args)
         {
 
-            int n;
+            int n, m=4;
             n = Convert.ToInt32(Console.ReadLine());
             int[,] a = new int[n, n];
 
