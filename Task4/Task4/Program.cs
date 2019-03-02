@@ -7,8 +7,9 @@ namespace Task4
         static void Main(string[] args)
         {
 
-            int n, m=4;
+            int n;
             n = Convert.ToInt32(Console.ReadLine());
+            // n is amount of rows and columns in the array a;
             int[,] a = new int[n, n];
 
             for(int i = 0; i < n; i++)
@@ -16,6 +17,7 @@ namespace Task4
                 for(int j = 0; j < n; j++)
                 {
                     if (i >= j)
+
                     {
                         Console.Write("[*]");
                     }

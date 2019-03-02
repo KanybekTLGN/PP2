@@ -6,29 +6,21 @@ namespace Task3
     {
         static void Main(string[] args)
         {
-
-            /*int n=Convert.ToInt32(Console.ReadLine());
-            int[] a = new int[n];
-            for(int i = 0; i < n; i++)
-            {
-                a[i] =Convert.ToInt32(Console.ReadLine());
-            }
-
-
-            for (int i = 0; i < n; i++)
-            {
-                Console.Write(a[i] + " " + a[i] + " ");           }
-                */
-                
-            int m = int.Parse(Console.ReadLine());
-            // m = is size of s2;
+            List<int> Lol = new List<int>();
+            int n = int.Parse(Console.ReadLine());
             string s = Convert.ToString(Console.ReadLine());
-            // s is like sequence of numbers;
-           string[] s2 = s.Split();
-            //s2 is s without " ";
-            for(int i = 0; i < 2 * m; i++)
+            string[] s1 = s.Split();
+
+                for(int i = 0; i < s1.Length; i++)
             {
-                Console.Write(s2[i] + " " + s2[i] + " ");
+                Lol.Add(Convert.ToInt32(s1[i]));
+
+                Lol.Add(Convert.ToInt32(s1[i]));
+            }       
+
+                for(int i = 0; i < Lol.Count; i++)
+            {
+                Console.Write(Lol[i] + " ");
             }
         }
 
